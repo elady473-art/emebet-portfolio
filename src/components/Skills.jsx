@@ -23,18 +23,30 @@ const icons = {
       <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
     </svg>
   ),
+  design2: (
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+      fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="10" />
+      <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+      <line x1="9" y1="9" x2="9.01" y2="9" />
+      <line x1="15" y1="9" x2="15.01" y2="9" />
+    </svg>
+  ),
 };
 
 export default function Skills() {
+  // If more than 3 skills, use a 2-column grid on desktop
+  const gridClass = skills.length > 3 ? 'skills-grid skills-grid-wide' : 'skills-grid';
+
   return (
     <section id="skills" className="section">
       <div className="bg-blur blur-4" />
       <div className="container">
         <SectionHeader title="My Skills" />
-        <div className="skills-grid">
+        <div className={gridClass}>
           {skills.map((cat) => (
             <div className="skill-category" key={cat.category}>
-              <div className="skill-icon">{icons[cat.icon]}</div>
+              <div className="skill-icon">{icons[cat.icon] || icons.design}</div>
               <h3 className="category-title">{cat.category}</h3>
               <div className="skills-list">
                 {cat.items.map((item) => (

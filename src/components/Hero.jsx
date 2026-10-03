@@ -55,7 +55,7 @@ export default function Hero() {
           <img src={personalInfo.profilePhoto} alt={personalInfo.name} />
         </div>
 
-        <h1 className="hero-name">{personalInfo.name}</h1>
+        <h1 className="name">{personalInfo.name}</h1>
 
         <div className="typing-container" aria-live="polite">
           <span className="typed-text">{displayText}</span>

@@ -4,33 +4,72 @@
 export const personalInfo = {
   name: "Emebet Mesfin",
   roles: ["Fullstack Developer", "Graphics Designer"],
-  bio: "I am a motivated Full Stack Development student who loves creating modern and responsive web applications. I have been learning both frontend and backend technologies and working on personal projects. My goal is to join an internship program where I can learn, grow, and contribute to real-world projects.",
+  bio: "Dedicated and committed Junior Web Developer with hands-on experience building responsive web applications using HTML, CSS, JavaScript, React, PHP, Java, and MySQL. Successfully completed a one-month Full-Stack Web Development internship, where I contributed to real development tasks and earned both an Internship Certificate and a Recommendation Letter. I am a fast learner who enjoys exploring new technologies and continuously improving my skills through daily learning and hands-on practice.",
   profilePhoto: "https://raw.githubusercontent.com/elady473-art/CodeAlpha_task3/main/emun-removebg-preview.png",
   aboutPhoto: "https://raw.githubusercontent.com/elady473-art/CodeAlpha_task3/main/EB.jpg",
   cvUrl: "profession cv.pdf",
+  location: "Addis Ababa, Ethiopia",
+  email: "elady473@gmail.com",
+  phone: "+251-907 688605",
 };
 
 export const stats = [
-  { value: 5, suffix: "+", label: "Projects" },
+  { value: 7, suffix: "+", label: "Projects" },
   { value: 10, suffix: "+", label: "Technologies" },
   { value: 2, suffix: " Years", label: "Experience" },
   { value: 100, suffix: "%", label: "Passion" },
+];
+
+export const education = [
+  {
+    degree: "Bachelor's of Computer Science",
+    school: "Hawassa University",
+    years: "2016–2019",
+  },
+  {
+    degree: "Bachelor's of Accounting and Finance",
+    school: "Info Link University College",
+    years: "2016–2019",
+  },
+];
+
+export const experience = [
+  {
+    role: "Fullstack Web Developer",
+    company: "Future Interns Plc.",
+    period: "Mar 6 – Apr 7",
+    points: [
+      "Built and designed web pages using front-end languages",
+      "Developed full frontend and backend projects using HTML, CSS, JavaScript, PHP, MySQL",
+    ],
+  },
+];
+
+export const certificates = [
+  "Programming Fundamentals — Ethiocoders.et",
+  "Full-Stack Development — Future Interns",
+  "C++ Fundamentals — Awaqi.com",
 ];
 
 export const skills = [
   {
     category: "Frontend",
     icon: "code",
-    items: ["React.js", "Next.js", "Figma UI/UX", "JavaScript"],
+    items: ["React.js", "Next.js", "Figma UI/UX", "JavaScript", "HTML", "CSS"],
   },
   {
     category: "Backend",
     icon: "database",
-    items: ["Node.js", "Express.js"],
+    items: ["Node.js", "Express.js", "PHP", "MySQL", "MongoDB"],
+  },
+  {
+    category: "Languages & Tools",
+    icon: "design",
+    items: ["Java", "C++", "Git & GitHub", "REST APIs"],
   },
   {
     category: "Graphics Design",
-    icon: "design",
+    icon: "design2",
     items: ["Business Card", "Social Media Posts", "Banner", "Logo"],
   },
 ];
@@ -59,7 +98,7 @@ export const projects = [
   },
   {
     title: "Amazon Market",
-    description: "Modern website for a market with menu and online ordering",
+    description: "Modern landing page for a marketplace with menu and online ordering",
     image: "https://raw.githubusercontent.com/elady473-art/CodeAlpha_task3/main/am.jpg",
     tags: ["React", "API", "Design"],
     link: "https://elady473-art.github.io/land/",
@@ -73,7 +112,7 @@ export const projects = [
   },
   {
     title: "Student Management System",
-    description: "Simple website for students with detailed data and online registration",
+    description: "Web app for students with detailed data management and online registration",
     image: "https://raw.githubusercontent.com/elady473-art/CodeAlpha_task3/main/stud.jpg",
     tags: ["JavaScript", "API", "MongoDB"],
     link: "https://elady473-art.github.io/FUTURE_FS-02/",
@@ -81,7 +120,7 @@ export const projects = [
   {
     title: "Restaurant",
     description: "Elegant restaurant website with reservation system and gallery",
-    image: "https://images.unsplash.com/photo-1768697358705-c1b60333da35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwcmVzdGF1cmFudCUyMGludGVyaW9yfGVufDF8fHx8MTc3NTYwOTg4OXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80",
     tags: ["React", "Express", "MongoDB"],
     link: "https://elady473-art.github.io/resto/",
   },
@@ -90,7 +129,7 @@ export const projects = [
 export const contactInfo = [
   {
     label: "Phone",
-    value: "0907688605",
+    value: "+251-907 688605",
     href: "tel:0907688605",
     icon: "phone",
   },
