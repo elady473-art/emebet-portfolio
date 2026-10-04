@@ -157,14 +157,14 @@ export default function Contact() {
         {/* Improved: contact form */}
         <ContactForm />
 
-        <div className="internship-section">
+        <div className="work-cta">
           <div className="internship-card">
-            <div className="internship-title">Available for Internship</div>
+            <div className="internship-title">Let&apos;s Build Something Together</div>
             <a
-              href={`mailto:${personalInfo.cvUrl ? 'elady473@gmail.com' : ''}`}
+              href="mailto:elady473@gmail.com"
               className="btn btn-primary pulse"
             >
-              Let&apos;s Work Together
+              Work With Me
             </a>
           </div>
         </div>

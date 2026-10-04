@@ -4,7 +4,7 @@
 export const personalInfo = {
   name: "Emebet Mesfin",
   roles: ["Fullstack Developer", "Graphics Designer"],
-  bio: "Dedicated and committed Junior Web Developer with hands-on experience building responsive web applications using HTML, CSS, JavaScript, React, PHP, Java, and MySQL. Successfully completed a one-month Full-Stack Web Development internship, where I contributed to real development tasks and earned both an Internship Certificate and a Recommendation Letter. I am a fast learner who enjoys exploring new technologies and continuously improving my skills through daily learning and hands-on practice.",
+  bio: "Dedicated and committed Junior Web Developer with hands-on experience building responsive web applications using HTML, CSS, JavaScript, React, PHP, Java, and MySQL. Successfully completed a Full-Stack Web Development internship where I contributed to real development tasks and earned both a Certificate and a Recommendation Letter. Currently working at INSA. I am a fast learner who enjoys exploring new technologies and continuously improving my skills.",
   profilePhoto: "https://raw.githubusercontent.com/elady473-art/CodeAlpha_task3/main/emun-removebg-preview.png",
   aboutPhoto: "https://raw.githubusercontent.com/elady473-art/CodeAlpha_task3/main/EB.jpg",
   cvUrl: "profession cv.pdf",
@@ -35,9 +35,21 @@ export const education = [
 
 export const experience = [
   {
+    role: "Web Developer",
+    company: "INSA — Information Network Security Administration",
+    period: "2024 – Present",
+    current: true,
+    points: [
+      "Developing and maintaining secure web applications for government systems",
+      "Collaborating with cross-functional teams to build responsive, user-friendly interfaces",
+      "Implementing frontend and backend features using modern web technologies",
+    ],
+  },
+  {
     role: "Fullstack Web Developer",
     company: "Future Interns Plc.",
-    period: "Mar 6 – Apr 7",
+    period: "Mar – Apr 2024",
+    current: false,
     points: [
       "Built and designed web pages using front-end languages",
       "Developed full frontend and backend projects using HTML, CSS, JavaScript, PHP, MySQL",
@@ -60,7 +72,7 @@ export const skills = [
   {
     category: "Backend",
     icon: "database",
-    items: ["Node.js", "Express.js", "PHP", "MySQL", "MongoDB"],
+    items: ["Node.js", "Express.js", "PHP", "MySQL", "PostgreSQL"],
   },
   {
     category: "Languages & Tools",
@@ -70,7 +82,7 @@ export const skills = [
   {
     category: "Graphics Design",
     icon: "design2",
-    items: ["Business Card", "Social Media Posts", "Banner", "Logo"],
+    items: ["Business Card", "Social Media Posts", "Banner", "Logo", "Thumbnail"],
   },
 ];
 
@@ -114,7 +126,7 @@ export const projects = [
     title: "Student Management System",
     description: "Web app for students with detailed data management and online registration",
     image: "https://raw.githubusercontent.com/elady473-art/CodeAlpha_task3/main/stud.jpg",
-    tags: ["JavaScript", "API", "MongoDB"],
+    tags: ["JavaScript", "API", "PostgreSQL"],
     link: "https://elady473-art.github.io/FUTURE_FS-02/",
   },
   {
@@ -163,29 +175,9 @@ export const contactInfo = [
 ];
 
 export const socialLinks = [
-  {
-    name: "Facebook",
-    href: "https://www.facebook.com/share/p/18PwFFNKdX/",
-    className: "facebook",
-  },
-  {
-    name: "Instagram",
-    href: "https://www.instagram.com/emu_ti_24",
-    className: "instagram",
-  },
-  {
-    name: "Telegram",
-    href: "https://t.me/Ladyti24",
-    className: "telegram",
-  },
-  {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/emebet-mesfin-780483358",
-    className: "linkedin",
-  },
-  {
-    name: "YouTube",
-    href: "https://youtube.com/@eladymaster_lady",
-    className: "youtube",
-  },
+  { name: "Facebook",  href: "https://www.facebook.com/share/p/18PwFFNKdX/", className: "facebook" },
+  { name: "Instagram", href: "https://www.instagram.com/emu_ti_24",           className: "instagram" },
+  { name: "Telegram",  href: "https://t.me/Ladyti24",                         className: "telegram" },
+  { name: "LinkedIn",  href: "https://www.linkedin.com/in/emebet-mesfin-780483358", className: "linkedin" },
+  { name: "YouTube",   href: "https://youtube.com/@eladymaster_lady",          className: "youtube" },
 ];
