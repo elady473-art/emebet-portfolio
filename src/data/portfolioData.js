@@ -3,8 +3,8 @@
 
 export const personalInfo = {
   name: "Emebet Mesfin",
-  roles: ["Fullstack Developer", "Graphics Designer"],
-  bio: "Dedicated and committed Junior Web Developer with hands-on experience building responsive web applications using HTML, CSS, JavaScript, React, PHP, Java, and MySQL. Successfully completed a Full-Stack Web Development internship where I contributed to real development tasks and earned both a Certificate and a Recommendation Letter. Currently working at INSA. I am a fast learner who enjoys exploring new technologies and continuously improving my skills.",
+  roles: ["Fullstack Developer", "Graphics Designer", "Software Developer"],
+  bio: "Dedicated and committed Junior Web Developer with hands-on experience building responsive web applications using HTML, CSS, JavaScript, React, PHP, Java, and MySQL. Successfully completed a Full-Stack Web Development internship where I contributed to real development tasks and earned both a Certificate and a Recommendation Letter. I also have 4 months of experience at INSA as a Frontend Developer and UI/UX Designer using Figma for an ERP project. I am a fast learner who enjoys exploring new technologies and continuously improving my skills.",
   profilePhoto: "https://raw.githubusercontent.com/elady473-art/CodeAlpha_task3/main/emun-removebg-preview.png",
   aboutPhoto: "https://raw.githubusercontent.com/elady473-art/CodeAlpha_task3/main/EB.jpg",
   cvUrl: "profession cv.pdf",

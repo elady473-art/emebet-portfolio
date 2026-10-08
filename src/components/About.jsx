@@ -90,7 +90,7 @@ export default function About() {
 
         <div className="about-content">
           <div className="about-image" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '350px', background: 'var(--card-bg)', borderRadius: '20px', border: '1px solid var(--border-color)', position: 'relative', overflow: 'hidden' }}>
-            <TypingText texts={["4th year CS student"]} />
+            <TypingText texts={["4th year CS student", "Software Developer"]} />
             <div className="glow-effect" />
           </div>
 
