@@ -92,7 +92,7 @@ export const projects = [
     description: "Property and Resource Management System developed with a microservices architecture.",
     image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80",
     tags: ["Backend", "Microservices", "Docker"],
-    link: "#",
+    github: "https://github.com/elady473-art/PRMS_SERVICE",
     status: "Ongoing",
   },
   {
@@ -100,7 +100,7 @@ export const projects = [
     description: "Enterprise Resource Planning system and mobile app development for businesses.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
     tags: ["Fullstack", "ERP", "Mobile App"],
-    link: "#",
+    github: "https://github.com/elady473-art/ERP-PRMS-module",
     status: "Ongoing",
   },
   {
@@ -108,7 +108,7 @@ export const projects = [
     description: "A modern application for a coffee and pastry shop with online ordering and menu browsing.",
     image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80",
     tags: ["React", "Mobile App", "E-Commerce"],
-    link: "#",
+    github: "https://github.com/elady473-art/Adey-Coffee-and-pastery",
     status: "Ongoing",
   },
   {
@@ -209,8 +209,8 @@ export const contactInfo = [
   },
   {
     label: "Telegram",
-    value: "@Ladyti24",
-    href: "https://t.me/Ladyti24",
+    value: "@Ladyti_24",
+    href: "https://t.me/Ladyti_24",
     icon: "telegram",
     external: true,
   },
@@ -219,7 +219,7 @@ export const contactInfo = [
 export const socialLinks = [
   { name: "Facebook",  href: "https://www.facebook.com/share/p/18PwFFNKdX/", className: "facebook" },
   { name: "Instagram", href: "https://www.instagram.com/emu_ti_24",           className: "instagram" },
-  { name: "Telegram",  href: "https://t.me/Ladyti24",                         className: "telegram" },
+  { name: "Telegram",  href: "https://t.me/Ladyti_24",                        className: "telegram" },
   { name: "LinkedIn",  href: "https://www.linkedin.com/in/emebet-mesfin-780483358", className: "linkedin" },
   { name: "YouTube",   href: "https://youtube.com/@eladymaster_lady",          className: "youtube" },
 ];
