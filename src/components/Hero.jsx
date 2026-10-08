@@ -63,12 +63,6 @@ export default function Hero() {
         </div>
 
         <div className="home-buttons">
-          <button className="btn btn-primary" onClick={() => scrollTo('projects')}>
-            View My Projects
-          </button>
-          <button className="btn btn-secondary" onClick={() => scrollTo('contact')}>
-            Contact Me
-          </button>
           <button className="btn btn-primary" onClick={viewCV}>
             <EyeIcon /> View CV
           </button>

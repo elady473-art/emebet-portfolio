@@ -104,6 +104,15 @@ export default function About() {
                 <StatCard key={s.label} {...s} started={started} />
               ))}
             </div>
+
+            <div className="about-buttons" style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
+              <button className="btn btn-primary" onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}>
+                View My Projects
+              </button>
+              <button className="btn btn-secondary" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+                Contact Me
+              </button>
+            </div>
           </div>
         </div>
       </div>
