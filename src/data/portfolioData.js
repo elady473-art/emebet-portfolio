@@ -114,7 +114,7 @@ export const projects = [
   {
     title: "Saminar E-commerce",
     description: "A complete e-commerce platform for Saminar, featuring a modern shopping experience.",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+    image: "/saminar-preview.png",
     tags: ["React", "E-Commerce", "API"],
     link: "https://saminar-web-git-main-elady473-arts-projects.vercel.app/",
     status: "Finished",
