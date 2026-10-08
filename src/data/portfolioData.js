@@ -93,6 +93,7 @@ export const projects = [
     image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80",
     tags: ["Backend", "Microservices", "Docker"],
     link: "#",
+    status: "Ongoing",
   },
   {
     title: "ERP & App Development",
@@ -100,6 +101,7 @@ export const projects = [
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
     tags: ["Fullstack", "ERP", "Mobile App"],
     link: "#",
+    status: "Ongoing",
   },
   {
     title: "Seminar Management",
@@ -107,13 +109,7 @@ export const projects = [
     image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
     tags: ["React", "API", "Event Management"],
     link: "https://saminar-web-git-main-elady473-arts-projects.vercel.app/",
-  },
-  {
-    title: "Email Template",
-    description: "A comprehensive system for managing EMAIL samples for big companies",
-    image: "https://raw.githubusercontent.com/elady473-art/CodeAlpha_task3/main/e.jpg",
-    tags: ["React", "Node.js"],
-    link: "https://elady473-art.github.io/email-template/",
+    status: "Ongoing",
   },
   {
     title: "Kenbon Computers",
@@ -121,6 +117,16 @@ export const projects = [
     image: "https://raw.githubusercontent.com/elady473-art/CodeAlpha_task3/main/pcy.jpg",
     tags: ["TypeScript", "React", "TailwindCSS"],
     link: "https://www.kenbontech.com/",
+    github: "https://github.com/elady473-art/kenbon_Computers",
+    status: "Finished",
+  },
+  {
+    title: "Email Template",
+    description: "A comprehensive system for managing EMAIL samples for big companies",
+    image: "https://raw.githubusercontent.com/elady473-art/CodeAlpha_task3/main/e.jpg",
+    tags: ["React", "Node.js"],
+    link: "https://elady473-art.github.io/email-template/",
+    status: "Finished",
   },
   {
     title: "Portfolio",
@@ -128,6 +134,7 @@ export const projects = [
     image: "https://raw.githubusercontent.com/elady473-art/CodeAlpha_task3/main/pooo.jpg",
     tags: ["React", "CSS", "JavaScript"],
     link: "https://elady473-art.github.io/emuportifolio/",
+    status: "Finished",
   },
   {
     title: "Amazon Market",
@@ -135,6 +142,7 @@ export const projects = [
     image: "https://raw.githubusercontent.com/elady473-art/CodeAlpha_task3/main/am.jpg",
     tags: ["React", "API", "Design"],
     link: "https://elady473-art.github.io/land/",
+    status: "Finished",
   },
   {
     title: "Power Gym",
@@ -142,6 +150,7 @@ export const projects = [
     image: "https://raw.githubusercontent.com/elady473-art/CodeAlpha_task3/main/gym.jpg",
     tags: ["React", "API", "CSS"],
     link: "https://elady473-art.github.io/FUTURE_FS_03/",
+    status: "Finished",
   },
   {
     title: "Student Management System",
@@ -149,6 +158,7 @@ export const projects = [
     image: "https://raw.githubusercontent.com/elady473-art/CodeAlpha_task3/main/stud.jpg",
     tags: ["JavaScript", "API", "PostgreSQL"],
     link: "https://elady473-art.github.io/FUTURE_FS-02/",
+    status: "Finished",
   },
   {
     title: "Restaurant Management App",
@@ -156,6 +166,7 @@ export const projects = [
     image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80",
     tags: ["React", "Express", "MongoDB", "Real-time"],
     link: "https://elady473-art.github.io/resto/",
+    status: "Finished",
   },
   {
     title: "Graphic Design: Logo",
@@ -163,6 +174,7 @@ export const projects = [
     image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&q=80",
     tags: ["Graphic Design", "Branding", "Logo"],
     link: "#",
+    status: "Finished",
   },
   {
     title: "Graphic Design: Business Card",
@@ -170,6 +182,7 @@ export const projects = [
     image: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=800&q=80",
     tags: ["Graphic Design", "Print"],
     link: "#",
+    status: "Finished",
   },
   {
     title: "Graphic Design: Social Media Posts",
@@ -177,6 +190,7 @@ export const projects = [
     image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
     tags: ["Graphic Design", "Social Media"],
     link: "#",
+    status: "Finished",
   },
 ];
 
