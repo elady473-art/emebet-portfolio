@@ -67,12 +67,12 @@ export const skills = [
   {
     category: "Frontend",
     icon: "code",
-    items: ["React.js", "Next.js", "Figma UI/UX", "JavaScript", "HTML", "CSS"],
+    items: ["React.js", "Next.js", "TypeScript", "TailwindCSS", "Figma UI/UX", "JavaScript", "HTML", "CSS"],
   },
   {
     category: "Backend",
     icon: "database",
-    items: ["Node.js", "Express.js", "PHP", "MySQL", "PostgreSQL"],
+    items: ["Node.js", "Express.js", "PHP", "MySQL", "PostgreSQL", "Supabase", "Keycloak", "Docker"],
   },
   {
     category: "Languages & Tools",
@@ -88,6 +88,27 @@ export const skills = [
 
 export const projects = [
   {
+    title: "PRMS Microservice",
+    description: "Property and Resource Management System developed with a microservices architecture.",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80",
+    tags: ["Backend", "Microservices", "Docker"],
+    link: "#",
+  },
+  {
+    title: "ERP & App Development",
+    description: "Enterprise Resource Planning system and mobile app development for businesses.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+    tags: ["Fullstack", "ERP", "Mobile App"],
+    link: "#",
+  },
+  {
+    title: "Seminar Management",
+    description: "A platform for organizing and managing seminars and events.",
+    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+    tags: ["React", "API", "Event Management"],
+    link: "https://saminar-web-git-main-elady473-arts-projects.vercel.app/",
+  },
+  {
     title: "Email Template",
     description: "A comprehensive system for managing EMAIL samples for big companies",
     image: "https://raw.githubusercontent.com/elady473-art/CodeAlpha_task3/main/e.jpg",
@@ -98,8 +119,8 @@ export const projects = [
     title: "Kenbon Computers",
     description: "Modern e-commerce platform for computer hardware and accessories",
     image: "https://raw.githubusercontent.com/elady473-art/CodeAlpha_task3/main/pcy.jpg",
-    tags: ["TypeScript", "React", "Tailwind"],
-    link: "https://elady473-art.github.io/Kenbon_Tec/",
+    tags: ["TypeScript", "React", "TailwindCSS"],
+    link: "https://www.kenbontech.com/",
   },
   {
     title: "Portfolio",
@@ -130,11 +151,32 @@ export const projects = [
     link: "https://elady473-art.github.io/FUTURE_FS-02/",
   },
   {
-    title: "Restaurant",
-    description: "Elegant restaurant website with reservation system and gallery",
+    title: "Restaurant Management App",
+    description: "Elegant restaurant website with reservation system, gallery, and real-time order tracking",
     image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80",
-    tags: ["React", "Express", "MongoDB"],
+    tags: ["React", "Express", "MongoDB", "Real-time"],
     link: "https://elady473-art.github.io/resto/",
+  },
+  {
+    title: "Graphic Design: Logo",
+    description: "Custom logo design demonstrating brand identity and creativity.",
+    image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&q=80",
+    tags: ["Graphic Design", "Branding", "Logo"],
+    link: "#",
+  },
+  {
+    title: "Graphic Design: Business Card",
+    description: "Professional business card design for various companies.",
+    image: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=800&q=80",
+    tags: ["Graphic Design", "Print"],
+    link: "#",
+  },
+  {
+    title: "Graphic Design: Social Media Posts",
+    description: "Engaging social media post designs to boost online presence.",
+    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
+    tags: ["Graphic Design", "Social Media"],
+    link: "#",
   },
 ];
 

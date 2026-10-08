@@ -33,6 +33,42 @@ function StatCard({ value, suffix, label, started }) {
   );
 }
 
+function TypingText({ texts }) {
+  const [displayText, setDisplayText] = useState('');
+  const [index, setIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentText = texts[index];
+    let timeout;
+
+    if (!isDeleting && displayText === currentText) {
+      timeout = setTimeout(() => setIsDeleting(true), 2000);
+    } else if (isDeleting && displayText === '') {
+      setIsDeleting(false);
+      setIndex((i) => (i + 1) % texts.length);
+    } else {
+      const speed = isDeleting ? 50 : 100;
+      timeout = setTimeout(() => {
+        setDisplayText(
+          isDeleting
+            ? currentText.substring(0, displayText.length - 1)
+            : currentText.substring(0, displayText.length + 1)
+        );
+      }, speed);
+    }
+
+    return () => clearTimeout(timeout);
+  }, [displayText, isDeleting, index, texts]);
+
+  return (
+    <div className="typing-container about-typing" aria-live="polite" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', fontSize: '1.8rem', fontWeight: 'bold', color: 'var(--primary-color)', textAlign: 'center', zIndex: 10 }}>
+      <span className="typed-text">{displayText}</span>
+      <span className="cursor" aria-hidden="true">|</span>
+    </div>
+  );
+}
+
 export default function About() {
   const [started, setStarted] = useState(false);
   const ref = useRef(null);
@@ -53,10 +89,8 @@ export default function About() {
         <SectionHeader title="About Me" />
 
         <div className="about-content">
-          <div className="about-image">
-            <div className="animated-box">
-              <img src={personalInfo.aboutPhoto} alt="About Emebet" />
-            </div>
+          <div className="about-image" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '350px', background: 'var(--card-bg)', borderRadius: '20px', border: '1px solid var(--border-color)', position: 'relative', overflow: 'hidden' }}>
+            <TypingText texts={["4th year CS student"]} />
             <div className="glow-effect" />
           </div>
 

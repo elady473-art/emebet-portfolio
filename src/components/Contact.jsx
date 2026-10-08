@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { contactInfo, socialLinks, personalInfo } from '../data/portfolioData';
+import { contactInfo, socialLinks } from '../data/portfolioData';
 import { SectionHeader } from './About';
 
 /* ── Contact icons map ─────────────────────────────────────────────── */
@@ -159,7 +159,7 @@ export default function Contact() {
 
         <div className="work-cta">
           <div className="internship-card">
-            <div className="internship-title">Let&apos;s Build Something Together</div>
+            <div className="internship-title">Available for Work</div>
             <a
               href="mailto:elady473@gmail.com"
               className="btn btn-primary pulse"
