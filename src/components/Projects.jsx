@@ -18,9 +18,44 @@ const GithubIcon = () => (
   </svg>
 );
 
+const GalleryIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+    fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+    <circle cx="8.5" cy="8.5" r="1.5" />
+    <polyline points="21 15 16 10 5 21" />
+  </svg>
+);
+
+function ImageModal({ images, onClose }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextImage = (e) => {
+    e.stopPropagation();
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  };
+  const prevImage = (e) => {
+    e.stopPropagation();
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  return (
+    <div style={{ position: 'fixed', inset: 0, zIndex: 9999, background: 'rgba(0,0,0,0.85)', display: 'flex', alignItems: 'center', justifyContent: 'center' }} onClick={onClose}>
+      <button onClick={onClose} style={{ position: 'absolute', top: '20px', right: '30px', background: 'transparent', border: 'none', color: 'white', fontSize: '3rem', cursor: 'pointer' }}>&times;</button>
+      <button onClick={prevImage} style={{ position: 'absolute', left: '20px', background: 'transparent', border: 'none', color: 'white', fontSize: '3rem', cursor: 'pointer' }}>&#10094;</button>
+      <img src={images[currentIndex]} style={{ maxHeight: '85vh', maxWidth: '85vw', objectFit: 'contain' }} alt="Gallery view" onClick={(e) => e.stopPropagation()} />
+      <button onClick={nextImage} style={{ position: 'absolute', right: '20px', background: 'transparent', border: 'none', color: 'white', fontSize: '3rem', cursor: 'pointer' }}>&#10095;</button>
+      <div style={{ position: 'absolute', bottom: '20px', color: 'white', fontSize: '1.2rem', background: 'rgba(0,0,0,0.5)', padding: '5px 15px', borderRadius: '20px' }}>
+        {currentIndex + 1} / {images.length}
+      </div>
+    </div>
+  );
+}
+
 export default function Projects() {
   const [projectType, setProjectType] = useState('Finished');
   const [tagFilter, setTagFilter] = useState('All');
+  const [galleryImages, setGalleryImages] = useState(null);
 
   const filteredByType = projects.filter((p) => p.status === projectType);
   const allTags = ['All', ...Array.from(new Set(filteredByType.flatMap((p) => p.tags)))];
@@ -63,6 +98,11 @@ export default function Projects() {
               <div className="project-image">
                 <img src={project.image} alt={project.title} loading="lazy" />
                 <div className="project-overlay" style={{ display: 'flex', gap: '1.5rem', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
+                  {project.images && (
+                    <button onClick={() => setGalleryImages(project.images)} aria-label="View Gallery" style={{ background: 'transparent', border: 'none', color: 'white', opacity: 0.9, cursor: 'pointer', padding: 0 }}>
+                      <GalleryIcon />
+                    </button>
+                  )}
                   {project.github && (
                     <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository" style={{ color: 'white', opacity: 0.9 }}>
                       <GithubIcon />
@@ -84,11 +124,20 @@ export default function Projects() {
                     <span key={tag} className="tag">{tag}</span>
                   ))}
                 </div>
+                {project.moreDesignsLink && (
+                  <a href={project.moreDesignsLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ marginTop: '1.5rem', display: 'inline-block', padding: '0.5rem 1rem', fontSize: '0.9rem' }}>
+                    More Designs
+                  </a>
+                )}
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      {galleryImages && (
+        <ImageModal images={galleryImages} onClose={() => setGalleryImages(null)} />
+      )}
     </section>
   );
 }
