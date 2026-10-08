@@ -16,7 +16,7 @@ export const personalInfo = {
 export const stats = [
   { value: 7, suffix: "+", label: "Projects" },
   { value: 10, suffix: "+", label: "Technologies" },
-  { value: 2, suffix: " Years", label: "Experience" },
+  { value: 3, suffix: "+ Years", label: "Experience" },
   { value: 100, suffix: "%", label: "Passion" },
 ];
 
@@ -217,9 +217,9 @@ export const contactInfo = [
 ];
 
 export const socialLinks = [
-  { name: "Facebook",  href: "https://www.facebook.com/share/p/18PwFFNKdX/", className: "facebook" },
-  { name: "Instagram", href: "https://www.instagram.com/emu_ti_24",           className: "instagram" },
-  { name: "Telegram",  href: "https://t.me/Ladyti_24",                        className: "telegram" },
-  { name: "LinkedIn",  href: "https://www.linkedin.com/in/emebet-mesfin-780483358", className: "linkedin" },
-  { name: "YouTube",   href: "https://youtube.com/@eladymaster_lady",          className: "youtube" },
+  { name: "Facebook", href: "https://www.facebook.com/share/p/18PwFFNKdX/", className: "facebook" },
+  { name: "Instagram", href: "https://www.instagram.com/emu_ti_24", className: "instagram" },
+  { name: "Telegram", href: "https://t.me/Ladyti_24", className: "telegram" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/emebet-mesfin-780483358", className: "linkedin" },
+  { name: "YouTube", href: "https://youtube.com/@eladymaster_lady", className: "youtube" },
 ];
